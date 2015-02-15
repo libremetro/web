@@ -147,15 +147,10 @@ p {
 	margin-top: 20px;
 }
 
-.examples .content {
-	background: #DADADA;
+.content {
 	color: #444;
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
-
-.examples .content:hover {
-	background: #c2c2c2;
 }
 
 .com { color: #93a1a1; }
