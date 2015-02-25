@@ -4,6 +4,7 @@
 			LibreMetro
 		</title>
 		<meta charset="utf-8">
+		<script src="jquery.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link rel="stylesheet" type="text/css" href="simpleGrid.css">
@@ -14,6 +15,14 @@
 			}
 		</style>
 		<![endif]-->
+
+		<script>
+		$(document).ready(function(){
+			$.get("numbers.html", function(data){
+	            $('#numbers').html(data);
+	        });
+		});
+		</script>
 
 	</head>
 	<body>
@@ -44,7 +53,7 @@
 						ВОСПОЛЬЗОВАТЬСЯ
 					</h2>
 					<p>
-						Для этого, всего лишь необходимо, во время прохождения идентификации на точке доступа MosMetro_Free указать номер</p> <pre><s>+79854764956</s><br>+79684350383</pre><div class="highlight"></div><p> и через несколько секунд уже можно пользоваться бесплатным доступом в Интернет в метро анонимно, не сообщая кому либо номер своего мобильного телефона
+						Для этого, всего лишь необходимо, во время прохождения идентификации на точке доступа MosMetro_Free указать номер</p> <pre id="numbers"></pre><div class="highlight"></div><p> и через несколько секунд уже можно пользоваться бесплатным доступом в Интернет в метро анонимно, не сообщая кому либо номер своего мобильного телефона
 					</p>
 				</div>
 			</div>
